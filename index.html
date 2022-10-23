@@ -21,6 +21,7 @@
 </head>
 <body>
     <div class="text-center header-container">
+        <div class="header-bg"></div>
         <div class="header-wrapper">
             <div class="header py-5">
                 <img src="hormel-logo.png" style="width: 120px;">
@@ -52,9 +53,10 @@
             </div>
         </div>
     </div>
-    <div class="container main">
+
+    <div class="container main mt-5">
         <div>
-            <div class="row align-items-center main-top">
+            <div class="row align-items-center main-top py-3">
                 <div class="col-md-8" style="padding-left: 2rem;">
                     <h2 class="display-6">Life Insurance</h2>
                     <p class="fs-18">There are two forms of insurance benefits.</p>
@@ -188,7 +190,7 @@
             </div>
         </div>
         <div>
-            <div class="row align-items-center main-top2">
+            <div class="row align-items-center main-top2 py-3">
                 <div class="col-md-8" style="padding-left: 2rem;">
                     <h2 class="display-6 text-light">Accidental Death & Dismemberment</h2>
                     <p class="fs-18">The insurance provides benefit in the event of severe injury, dismemberment or accidental death.</p>
@@ -268,9 +270,13 @@
     <script src="assets/js/theme-custom.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
-        containerHeight = $(".header").height() + $('.img-container').height() -200;
-        $(".header-wrapper").height(containerHeight);
-        $(".header-container ").height(containerHeight + 350);
+        // containerHeight = $('.header').height() + $('.img-container').height()/2;
+        // alert(containerHeight);
+        // $(".header-wrapper").height(containerHeight);
+        // $(".header-container").height(containerHeight + $('.img-container').height()/2);
+        containerHeight = $(".header").height() + $(".img-container").height()/2;
+        $(".header-bg").height(containerHeight);
+        $(".header-bg").width($(window).width());
     </script>
 
 </body>

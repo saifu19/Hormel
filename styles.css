@@ -1,6 +1,11 @@
-.header-wrapper {
+.header-bg {
     background-color: #e4f0f3;
     border-radius: 0 0 80px 80px;
+    position: absolute;
+    z-index: -1;
+}
+.header-wrapper {
+    
 }
 .header-links, .header-links:hover {
     color: #a5c093;
